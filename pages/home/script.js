@@ -20,14 +20,17 @@ const getData = async () => {
         let cover
         if(livro.cover_i)
         {
-
+            cover = `https://covers.openlibrary.org/b/id/${livro.cover_i}-M.jpg`
+        }
+        else {
+            cover = "../../global/images/cachorro-fofo.jpg"
         }
 
-        
+
         const div = document.createElement("div")
         div.className = "card"
         div.innerHTML = `
-            <img class="image-card" src="../../global/images/cachorro-fofo.jpg" alt="cachorro">
+            <img class="image-card" src="${cover}" alt="filme">
             <div class="texto-card">${livro.title}</div>
         `
         listaCard.appendChild(div)
