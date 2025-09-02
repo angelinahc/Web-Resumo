@@ -16,6 +16,14 @@ const getData = async () => {
     const docs = response.docs
     listaCard.innerHTML = ""
     docs.forEach(livro => {
+
+        let cover
+        if(livro.cover_i)
+        {
+
+        }
+
+        
         const div = document.createElement("div")
         div.className = "card"
         div.innerHTML = `
