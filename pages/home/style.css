@@ -1,0 +1,67 @@
+.cabecalho {
+    background-color: #c77c4a;
+    width: 100vw;
+    padding: 20px
+}
+
+.fundo-bege {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #e7c19e;
+}
+
+.card {
+    width: 150px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.image-card {
+    width: 100%;
+}
+
+.lista-de-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.caixa-procurar {
+    background-color: rgb(211, 120, 120);
+    width: 500px;
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+    position: relative;
+}
+
+.input-procurar {
+    background-color: transparent;
+    left: 2px;
+    width: 80%;
+    height: 70%;
+    border: none;
+}
+
+.input-procurar:focus {
+    outline: none;
+}
+
+.botao-input {
+    border: none;
+    background-color: transparent;
+    width: 20%;
+
+    position: absolute;
+    top: 10px;
+    right: -10px;
+}
+
+.imagem-input {
+    width: 30%;
+}
